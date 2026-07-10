@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --color-brand-blue: #0D47A1;
+  --color-brand-blue-dark: #093475;
+  --color-brand-blue-light: #1E88E5;
+  --color-brand-blue-pale: #E3F2FD;
+  --color-brand-gray-light: #F8FAFC;
+  --color-brand-gray-dark: #334155;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: #FFFFFF;
+    color: var(--color-brand-gray-dark);
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom animated background pattern */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: linear-gradient(to right, rgba(13, 71, 161, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(13, 71, 161, 0.05) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(13, 71, 161, 0.08) 1px, transparent 1px);
+}
+
+/* Smooth custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94A3B8;
+}

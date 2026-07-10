@@ -1,0 +1,6 @@
+{
+  "name": "Sapanesia Media Management",
+  "description": "Landing page profesional Sapanesia Media Management - Partner Media & Branding Sekolah untuk meningkatkan citra digital dan menyukseskan PPDB sekolah.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
